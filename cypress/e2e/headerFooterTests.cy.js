@@ -1,4 +1,4 @@
-describe('Header & Footer (real DOM)', () => {
+describe('Validate Header & Footer', () => {
 
     beforeEach(() => {
         cy.visit('https://guest:welcome2qauto@qauto.forstudy.space/');
