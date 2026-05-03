@@ -7,6 +7,5 @@ describe("Login test", () => {
 
         LoginPage.open();
         LoginPage.login(email, password);
-        // LoginPage.login("test@test.com", "123456");
     });
 });
