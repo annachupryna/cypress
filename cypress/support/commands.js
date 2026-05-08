@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add(
+    "createExpense",
+    (carId, mileage, liters, totalCost) => {
+
+        const today = new Date().toISOString().split("T")[0];
+
+        return cy.request({
+            method: "POST",
+            url: "/api/expenses",
+            body: {
+                carId,
+                reportedAt: today,
+                mileage,
+                liters,
+                totalCost,
+                forceMileage: false
+            }
+        });
+    }
+);
