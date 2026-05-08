@@ -1,26 +1,16 @@
 {
-  "name": "cypress",
+  "name": "cypress-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "npx cypress open",
-    "cypress:run": "cypress run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/annachupryna/cypress.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/annachupryna/cypress/issues"
-  },
-  "homepage": "https://github.com/annachupryna/cypress#readme",
   "devDependencies": {
-    "cypress": "^15.11.0"
+    "cypress": "^15.14.2"
   }
 }
