@@ -100,6 +100,12 @@ class GaragePage extends BasePage {
         cy.get(this.selectors.carGroup)
             .should("not.exist");
     }
+
+    openExpensesTab() {
+        cy.contains(this.selectors.fuelExpensesTabText)
+            .should("be.visible")
+            .click();
+    }
 }
 
 export default new GaragePage();
